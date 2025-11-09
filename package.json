@@ -1,11 +1,14 @@
 {
   "name": "node-red-server",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Node-RED on Render",
   "scripts": {
-    "start": "node-red -p $PORT"
+    "start": "npx node-red -p $PORT --userDir ./data"
   },
   "dependencies": {
     "node-red": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
